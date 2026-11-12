@@ -1,6 +1,8 @@
 package erp.core;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public abstract class Product implements Serializable{
     
@@ -12,6 +14,7 @@ public abstract class Product implements Serializable{
     private ProductCategory _category;
     private int _basePrice;
     private int _baseDeliveryTime;
+    private List<SuppliedProduct> _supplies;
     
     public Product(int id, String name, ProductCategory category, int basePrice, int baseDeliveryTime){
         this._id = id;
@@ -19,6 +22,7 @@ public abstract class Product implements Serializable{
         this._category = category;
         this._baseDeliveryTime = baseDeliveryTime;
         this._basePrice = basePrice;
+        this._supplies = new ArrayList<>();
     }
 
 
@@ -43,8 +47,20 @@ public abstract class Product implements Serializable{
     }
 
     public int totalUnits(){
-        return 0; //Alterar quando estivermos a mexer nos stocks e assim
+        int total = 0; 
+        for ( SuppliedProduct p: this._supplies){
+            total += p.getQuantity();
+        }
+        return total;
     }
+
+    void addSupply(SuppliedProduct p){
+        this._supplies.add(p);
+    }
+
+
+
+
 
     public abstract String type();
 
