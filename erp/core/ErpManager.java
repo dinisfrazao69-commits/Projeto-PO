@@ -2,7 +2,7 @@ package erp.core;
 
 import erp.core.exception.*;
 import java.io.*;
-//FIXME maybe import classes
+import java.util.List;
 
 /**
  * The façade of the ERP core: the single entry point through which the
@@ -14,8 +14,19 @@ public class ErpManager {
 
   /** The object doing all the actual work. */
   private Erp _erp = new Erp();
+  private boolean _modified = false;
 
-  //FIXME maybe define constructors
+  public List <Client> listClients(){
+    return _erp.listClients();
+  }
+  public void registerClient(String name, String email) throws ClientRegistrationException {
+    _erp.registerClient(name, email);
+    _modified = true;
+  }
+
+  public Client searchClient(String email) throws UnknownClientException {
+    return _erp.searchClient(email);
+  }
 
   // --- persistence -------------------------------------------------------
 
