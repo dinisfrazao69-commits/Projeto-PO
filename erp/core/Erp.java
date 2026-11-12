@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 // FIXME maybe import classes
 
 /**
@@ -22,15 +25,28 @@ class Erp implements Serializable {
 
   //FIXME maybe implement methods
   private Map<String, Client> _clients = new TreeMap<>(); 
+
+  List <Client> listClients() {
+    List<Client> clients = new ArrayList<>(_clients.values());
+
+    clients.sort(Comparator.comparing(Client::getName, 
+      String.CASE_INSENSITIVE_ORDER).thenComparing(Client::getEmail, String.CASE_INSENSITIVE_ORDER));
+    //o string.case_insensitive é para comparar os textos sem distinguir maisuculas d eminusculas
+    //ou seja, primeiro compara os nomes e depois compara os emails
+    return clients;
+  }
+
+  //o modified vai ficar no erpManager e não aqui
   
   void registerClient(String name, String email) throws ClientRegistrationException {
-    if (_clients.containsKey(email)) {
+    if (name.isBlank() || email.isBlank() || _clients.containsKey(email)) {
       throw new ClientRegistrationException(name, email);
         }
           
-          Client client = new Client(name, email);
-          _clients.put(email, client);
+        Client client = new Client(name, email);
+        _clients.put(email, client);
   }
+
 
   Client searchClient(String email) throws UnknownClientException {
     if (!_clients.containsKey(email)) {
