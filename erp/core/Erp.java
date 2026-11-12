@@ -3,6 +3,8 @@ package erp.core;
 import erp.core.exception.*;
 import java.io.IOException;
 import java.io.Serializable;
+import java.util.Map;
+import java.util.TreeMap;
 // FIXME maybe import classes
 
 /**
@@ -15,7 +17,22 @@ class Erp implements Serializable {
 
   //FIXME maybe define attributes
   //FIXME maybe implement constructor
+
+
+
   //FIXME maybe implement methods
+  private Map<String, Client> _clients = new TreeMap<>(); 
+  
+  void registerClient(String name, String email) 
+        throws ClientRegistrationException {
+
+          if (_clients.containsKey(email)) {
+              throw new ClientRegistrationException(name, email);
+          }
+          
+          Client client = new Client(name, email);
+          _clients.put(email, client);
+  }
 
   /**
    * Read text input file at the beginning of the program and populates the
