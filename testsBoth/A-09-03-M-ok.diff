@@ -1,0 +1,75 @@
+*** testsBoth/A-09-03-M-ok.out	2026-11-11 12:06:41.837350843 +0000
+--- testsBoth/A-09-03-M-ok.outhyp	2026-11-12 15:47:23.327431204 +0000
+***************
+*** 16,29 ****
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o tipo de produto: IMPORTADO
+! Introduza o nome do produto: btt
+! Introduza o preço base: 12
+! Introduza a categoria: ALIMENTAR
+! Introduza o prazo de entrega base: 12
+! Introduza o país de origem: china
+! Introduza a taxa alfandegária: 21
+! Novo produto criado com o número 2.
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+--- 16,60 ----
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Produtos
+! 1 - Registar produto
+! 2 - Mostrar produto
+! 3 - Mostrar todos os produtos
+! 4 - Efectuar pesquisa de produtos
+! 0 - Sair
+! Escolha uma opção: IMPORTADO
+! Número inválido!
+! Escolha uma opção: btt
+! Número inválido!
+! Escolha uma opção: 12
+! Opção inválida!
+! Menu de Gestão de Produtos
+! 1 - Registar produto
+! 2 - Mostrar produto
+! 3 - Mostrar todos os produtos
+! 4 - Efectuar pesquisa de produtos
+! 0 - Sair
+! Escolha uma opção: ALIMENTAR
+! Número inválido!
+! Escolha uma opção: 12
+! Opção inválida!
+! Menu de Gestão de Produtos
+! 1 - Registar produto
+! 2 - Mostrar produto
+! 3 - Mostrar todos os produtos
+! 4 - Efectuar pesquisa de produtos
+! 0 - Sair
+! Escolha uma opção: china
+! Número inválido!
+! Escolha uma opção: 21
+! Opção inválida!
+! Menu de Gestão de Produtos
+! 1 - Registar produto
+! 2 - Mostrar produto
+! 3 - Mostrar todos os produtos
+! 4 - Efectuar pesquisa de produtos
+! 0 - Sair
+! Escolha uma opção: 2
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+***************
+*** 31,38 ****
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 2
+- Introduza o número do produto: 2
+- 2 - IMPORTADO - btt - ALIMENTAR - 12.00 - 14.52 - 12 - 0 - china - 21.0
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+--- 62,67 ----

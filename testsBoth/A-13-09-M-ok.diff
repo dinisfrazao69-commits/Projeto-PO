@@ -1,0 +1,74 @@
+*** testsBoth/A-13-09-M-ok.out	2026-11-11 12:06:43.496093858 +0000
+--- testsBoth/A-13-09-M-ok.outhyp	2026-11-12 15:47:23.934117480 +0000
+***************
+*** 18,28 ****
+  6 - Mostrar clientes de uma empresa
+  0 - Sair
+  Escolha uma opção: 4
+- Introduza o número da empresa: 2
+- Introduza o número do produto: 1
+- Introduza a quantidade a actualizar: 30
+- Introduza o factor multiplicativo do preço recomendado: 1.0
+- A empresa 2 passou a disponibilizar o produto 1.
+  Menu de Gestão de Empresas
+  1 - Registar empresa
+  2 - Mostrar empresa
+--- 18,23 ----
+***************
+*** 31,39 ****
+  5 - Mostrar produtos de uma empresa
+  6 - Mostrar clientes de uma empresa
+  0 - Sair
+  Escolha uma opção: 5
+! Introduza o número da empresa: 2
+! 2 - 1 - 40 - 1.0 - 19.50
+  Menu de Gestão de Empresas
+  1 - Registar empresa
+  2 - Mostrar empresa
+--- 26,71 ----
+  5 - Mostrar produtos de uma empresa
+  6 - Mostrar clientes de uma empresa
+  0 - Sair
++ Escolha uma opção: 2
++ Menu de Gestão de Empresas
++ 1 - Registar empresa
++ 2 - Mostrar empresa
++ 3 - Mostrar todas as empresas
++ 4 - Alterar inventário de um produto
++ 5 - Mostrar produtos de uma empresa
++ 6 - Mostrar clientes de uma empresa
++ 0 - Sair
++ Escolha uma opção: 1
++ Menu de Gestão de Empresas
++ 1 - Registar empresa
++ 2 - Mostrar empresa
++ 3 - Mostrar todas as empresas
++ 4 - Alterar inventário de um produto
++ 5 - Mostrar produtos de uma empresa
++ 6 - Mostrar clientes de uma empresa
++ 0 - Sair
++ Escolha uma opção: 30
++ Opção inválida!
++ Menu de Gestão de Empresas
++ 1 - Registar empresa
++ 2 - Mostrar empresa
++ 3 - Mostrar todas as empresas
++ 4 - Alterar inventário de um produto
++ 5 - Mostrar produtos de uma empresa
++ 6 - Mostrar clientes de uma empresa
++ 0 - Sair
++ Escolha uma opção: 1.0
++ Número inválido!
+  Escolha uma opção: 5
+! Menu de Gestão de Empresas
+! 1 - Registar empresa
+! 2 - Mostrar empresa
+! 3 - Mostrar todas as empresas
+! 4 - Alterar inventário de um produto
+! 5 - Mostrar produtos de uma empresa
+! 6 - Mostrar clientes de uma empresa
+! 0 - Sair
+! Escolha uma opção: 2
+  Menu de Gestão de Empresas
+  1 - Registar empresa
+  2 - Mostrar empresa

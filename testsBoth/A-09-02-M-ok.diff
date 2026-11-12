@@ -1,0 +1,81 @@
+*** testsBoth/A-09-02-M-ok.out	2026-11-11 12:06:41.732072108 +0000
+--- testsBoth/A-09-02-M-ok.outhyp	2026-11-12 15:47:23.286470508 +0000
+***************
+*** 16,29 ****
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o tipo de produto: IMPORTADO
+! Introduza o nome do produto: CPU
+! Introduza o preço base: 120
+! Introduza a categoria: ELECTRONICA
+! Introduza o prazo de entrega base: 12
+! Introduza o país de origem: China
+! Introduza a taxa alfandegária: 21
+! Novo produto criado com o número 1.
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+--- 16,53 ----
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Produtos
+! 1 - Registar produto
+! 2 - Mostrar produto
+! 3 - Mostrar todos os produtos
+! 4 - Efectuar pesquisa de produtos
+! 0 - Sair
+! Escolha uma opção: IMPORTADO
+! Número inválido!
+! Escolha uma opção: CPU
+! Número inválido!
+! Escolha uma opção: 120
+! Opção inválida!
+! Menu de Gestão de Produtos
+! 1 - Registar produto
+! 2 - Mostrar produto
+! 3 - Mostrar todos os produtos
+! 4 - Efectuar pesquisa de produtos
+! 0 - Sair
+! Escolha uma opção: ELECTRONICA
+! Número inválido!
+! Escolha uma opção: 12
+! Opção inválida!
+! Menu de Gestão de Produtos
+! 1 - Registar produto
+! 2 - Mostrar produto
+! 3 - Mostrar todos os produtos
+! 4 - Efectuar pesquisa de produtos
+! 0 - Sair
+! Escolha uma opção: China
+! Número inválido!
+! Escolha uma opção: 21
+! Opção inválida!
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+***************
+*** 31,38 ****
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 2
+! Introduza o número do produto: 1
+! 1 - IMPORTADO - CPU - ELECTRONICA - 120.00 - 145.20 - 12 - 0 - China - 21.0
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+--- 55,67 ----
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 2
+! Menu de Gestão de Produtos
+! 1 - Registar produto
+! 2 - Mostrar produto
+! 3 - Mostrar todos os produtos
+! 4 - Efectuar pesquisa de produtos
+! 0 - Sair
+! Escolha uma opção: 1
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto

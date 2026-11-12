@@ -1,0 +1,12 @@
+*** testsBoth/A-01-03-M-ok.out	2026-11-11 12:06:39.009436995 +0000
+--- testsBoth/A-01-03-M-ok.outhyp	2026-11-12 15:47:22.326442364 +0000
+***************
+*** 16,22 ****
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 3
+- 1 - NACIONAL - Farinha - ALIMENTAR - 15.00 - 19.50 - 3 - 0
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+--- 16,21 ----

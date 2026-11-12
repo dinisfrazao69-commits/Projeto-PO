@@ -1,0 +1,56 @@
+*** testsBoth/A-14-06-M-ok.out	2026-11-11 12:06:44.126888572 +0000
+--- testsBoth/A-14-06-M-ok.outhyp	2026-11-12 15:47:24.156564675 +0000
+***************
+*** 16,39 ****
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 4
+- Introduza o critério de pesquisa: NOME
+- Introduza o termo de pesquisa: China
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+  3 - Mostrar todos os produtos
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 4
+- Introduza o critério de pesquisa: NOME
+- Introduza o termo de pesquisa: Telemovel
+- 2 - IMPORTADO - Telemovel - ELECTRONICA - 200.00 - 260.00 - 3 - 20 - China - 30.0
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+  3 - Mostrar todos os produtos
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 0
+  Menu Principal
+  1 - Abrir ficheiro
+--- 16,42 ----
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 4
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+  3 - Mostrar todos os produtos
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
++ Escolha uma opção: NOME
++ Número inválido!
++ Escolha uma opção: China
++ Número inválido!
+  Escolha uma opção: 4
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+  3 - Mostrar todos os produtos
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
++ Escolha uma opção: NOME
++ Número inválido!
++ Escolha uma opção: Telemovel
++ Número inválido!
+  Escolha uma opção: 0
+  Menu Principal
+  1 - Abrir ficheiro

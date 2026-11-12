@@ -1,0 +1,39 @@
+*** testsBoth/A-01-09-M-ok.out	2026-11-11 12:06:39.279967488 +0000
+--- testsBoth/A-01-09-M-ok.outhyp	2026-11-12 15:47:22.437480404 +0000
+***************
+*** 9,15 ****
+  8 - Menu de gestão de compras
+  0 - Sair
+  Escolha uma opção: 4
+! Introduza número de dias a avançar: 1
+  Menu Principal
+  1 - Abrir ficheiro
+  2 - Guardar ficheiro
+--- 9,25 ----
+  8 - Menu de gestão de compras
+  0 - Sair
+  Escolha uma opção: 4
+! Menu Principal
+! 1 - Abrir ficheiro
+! 2 - Guardar ficheiro
+! 3 - Ver data
+! 4 - Avançar data
+! 5 - Menu de gestão de empresas
+! 6 - Menu de gestão de produtos
+! 7 - Menu de gestão de clientes
+! 8 - Menu de gestão de compras
+! 0 - Sair
+! Escolha uma opção: 1
+  Menu Principal
+  1 - Abrir ficheiro
+  2 - Guardar ficheiro
+***************
+*** 21,27 ****
+  8 - Menu de gestão de compras
+  0 - Sair
+  Escolha uma opção: 3
+- Data actual: 2
+  Menu Principal
+  1 - Abrir ficheiro
+  2 - Guardar ficheiro
+--- 31,36 ----

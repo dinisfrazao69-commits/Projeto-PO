@@ -1,0 +1,12 @@
+*** testsBoth/A-01-08-M-ok.out	2026-11-11 12:06:39.198610857 +0000
+--- testsBoth/A-01-08-M-ok.outhyp	2026-11-12 15:47:22.401152378 +0000
+***************
+*** 9,15 ****
+  8 - Menu de gestão de compras
+  0 - Sair
+  Escolha uma opção: 3
+- Data actual: 1
+  Menu Principal
+  1 - Abrir ficheiro
+  2 - Guardar ficheiro
+--- 9,14 ----

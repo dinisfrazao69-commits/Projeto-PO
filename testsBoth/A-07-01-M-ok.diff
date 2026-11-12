@@ -1,0 +1,29 @@
+*** testsBoth/A-07-01-M-ok.out	2026-11-11 12:06:41.168091501 +0000
+--- testsBoth/A-07-01-M-ok.outhyp	2026-11-12 15:47:23.055003398 +0000
+***************
+*** 18,25 ****
+  6 - Mostrar clientes de uma empresa
+  0 - Sair
+  Escolha uma opção: 2
+! Introduza o número da empresa: 12
+! Mostrar empresa: Operação inválida: A empresa 12 não existe.
+  Menu de Gestão de Empresas
+  1 - Registar empresa
+  2 - Mostrar empresa
+--- 18,33 ----
+  6 - Mostrar clientes de uma empresa
+  0 - Sair
+  Escolha uma opção: 2
+! Menu de Gestão de Empresas
+! 1 - Registar empresa
+! 2 - Mostrar empresa
+! 3 - Mostrar todas as empresas
+! 4 - Alterar inventário de um produto
+! 5 - Mostrar produtos de uma empresa
+! 6 - Mostrar clientes de uma empresa
+! 0 - Sair
+! Escolha uma opção: 12
+! Opção inválida!
+  Menu de Gestão de Empresas
+  1 - Registar empresa
+  2 - Mostrar empresa

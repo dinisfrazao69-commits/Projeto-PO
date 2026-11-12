@@ -1,0 +1,54 @@
+*** testsBoth/A-11-01-M-ok.out	2026-11-11 12:06:42.240056826 +0000
+--- testsBoth/A-11-01-M-ok.outhyp	2026-11-12 15:47:23.490905695 +0000
+***************
+*** 23,34 ****
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o tipo de produto: NACIONAL
+! Introduza o nome do produto: Batata
+! Introduza o preço base: 12
+! Introduza a categoria: ALIMENTAR
+! Introduza o prazo de entrega base: 3
+! Novo produto criado com o número 1.
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+--- 23,49 ----
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Produtos
+! 1 - Registar produto
+! 2 - Mostrar produto
+! 3 - Mostrar todos os produtos
+! 4 - Efectuar pesquisa de produtos
+! 0 - Sair
+! Escolha uma opção: NACIONAL
+! Número inválido!
+! Escolha uma opção: Batata
+! Número inválido!
+! Escolha uma opção: 12
+! Opção inválida!
+! Menu de Gestão de Produtos
+! 1 - Registar produto
+! 2 - Mostrar produto
+! 3 - Mostrar todos os produtos
+! 4 - Efectuar pesquisa de produtos
+! 0 - Sair
+! Escolha uma opção: ALIMENTAR
+! Número inválido!
+! Escolha uma opção: 3
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+***************
+*** 36,42 ****
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 3
+- 1 - NACIONAL - Batata - ALIMENTAR - 12.00 - 15.60 - 3 - 0
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+--- 51,56 ----

@@ -1,0 +1,39 @@
+*** testsBoth/A-03-01-M-ok.out	2026-11-11 12:06:40.156751021 +0000
+--- testsBoth/A-03-01-M-ok.outhyp	2026-11-12 15:47:22.684848152 +0000
+***************
+*** 16,32 ****
+  4 - Mostrar notificações de cliente
+  0 - Sair
+  Escolha uma opção: 1
+- Introduza o nome do cliente: Darth Vader
+- Introduza o endereço de correio do cliente: darth@empire.uni
+- Novo cliente criado: darth@empire.uni.
+  Menu de Gestão de Clientes
+  1 - Registar cliente
+  2 - Mostrar cliente
+  3 - Mostrar todos os clientes
+  4 - Mostrar notificações de cliente
+  0 - Sair
+  Escolha uma opção: 3
+- darth@empire.uni - Darth Vader - 0.00
+  Menu de Gestão de Clientes
+  1 - Registar cliente
+  2 - Mostrar cliente
+--- 16,32 ----
+  4 - Mostrar notificações de cliente
+  0 - Sair
+  Escolha uma opção: 1
+  Menu de Gestão de Clientes
+  1 - Registar cliente
+  2 - Mostrar cliente
+  3 - Mostrar todos os clientes
+  4 - Mostrar notificações de cliente
+  0 - Sair
++ Escolha uma opção: Darth Vader
++ Número inválido!
++ Escolha uma opção: darth@empire.uni
++ Número inválido!
+  Escolha uma opção: 3
+  Menu de Gestão de Clientes
+  1 - Registar cliente
+  2 - Mostrar cliente

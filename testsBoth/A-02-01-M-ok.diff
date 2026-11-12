@@ -1,0 +1,32 @@
+*** testsBoth/A-02-01-M-ok.out	2026-11-11 12:06:39.514422935 +0000
+--- testsBoth/A-02-01-M-ok.outhyp	2026-11-12 15:47:22.512090034 +0000
+***************
+*** 16,23 ****
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 3
+- 1 - NACIONAL - Farinha - ALIMENTAR - 15.00 - 19.50 - 3 - 0
+- 2 - IMPORTADO - Telemovel - ELECTRONICA - 200.00 - 260.00 - 3 - 0 - China - 30.0
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+--- 16,21 ----
+***************
+*** 36,42 ****
+  8 - Menu de gestão de compras
+  0 - Sair
+  Escolha uma opção: 2
+- Ficheiro sem nome. Guardar ficheiro como: produtos.dat
+  Menu Principal
+  1 - Abrir ficheiro
+  2 - Guardar ficheiro
+--- 34,39 ----
+***************
+*** 47,50 ****
+--- 44,49 ----
+  7 - Menu de gestão de clientes
+  8 - Menu de gestão de compras
+  0 - Sair
++ Escolha uma opção: produtos.dat
++ Número inválido!
+  Escolha uma opção: 0

@@ -1,0 +1,104 @@
+*** testsBoth/A-01-11-M-ok.out	2026-11-11 12:06:39.370521951 +0000
+--- testsBoth/A-01-11-M-ok.outhyp	2026-11-12 15:47:22.475164809 +0000
+***************
+*** 9,15 ****
+  8 - Menu de gestão de compras
+  0 - Sair
+  Escolha uma opção: 4
+! Introduza número de dias a avançar: 2
+  Menu Principal
+  1 - Abrir ficheiro
+  2 - Guardar ficheiro
+--- 9,25 ----
+  8 - Menu de gestão de compras
+  0 - Sair
+  Escolha uma opção: 4
+! Menu Principal
+! 1 - Abrir ficheiro
+! 2 - Guardar ficheiro
+! 3 - Ver data
+! 4 - Avançar data
+! 5 - Menu de gestão de empresas
+! 6 - Menu de gestão de produtos
+! 7 - Menu de gestão de clientes
+! 8 - Menu de gestão de compras
+! 0 - Sair
+! Escolha uma opção: 2
+  Menu Principal
+  1 - Abrir ficheiro
+  2 - Guardar ficheiro
+***************
+*** 21,27 ****
+  8 - Menu de gestão de compras
+  0 - Sair
+  Escolha uma opção: 4
+- Introduza número de dias a avançar: 3
+  Menu Principal
+  1 - Abrir ficheiro
+  2 - Guardar ficheiro
+--- 31,36 ----
+***************
+*** 33,39 ****
+  8 - Menu de gestão de compras
+  0 - Sair
+  Escolha uma opção: 3
+! Data actual: 6
+  Menu Principal
+  1 - Abrir ficheiro
+  2 - Guardar ficheiro
+--- 42,58 ----
+  8 - Menu de gestão de compras
+  0 - Sair
+  Escolha uma opção: 3
+! Menu Principal
+! 1 - Abrir ficheiro
+! 2 - Guardar ficheiro
+! 3 - Ver data
+! 4 - Avançar data
+! 5 - Menu de gestão de empresas
+! 6 - Menu de gestão de produtos
+! 7 - Menu de gestão de clientes
+! 8 - Menu de gestão de compras
+! 0 - Sair
+! Escolha uma opção: 3
+  Menu Principal
+  1 - Abrir ficheiro
+  2 - Guardar ficheiro
+***************
+*** 45,51 ****
+  8 - Menu de gestão de compras
+  0 - Sair
+  Escolha uma opção: 4
+! Introduza número de dias a avançar: 40
+  Menu Principal
+  1 - Abrir ficheiro
+  2 - Guardar ficheiro
+--- 64,81 ----
+  8 - Menu de gestão de compras
+  0 - Sair
+  Escolha uma opção: 4
+! Menu Principal
+! 1 - Abrir ficheiro
+! 2 - Guardar ficheiro
+! 3 - Ver data
+! 4 - Avançar data
+! 5 - Menu de gestão de empresas
+! 6 - Menu de gestão de produtos
+! 7 - Menu de gestão de clientes
+! 8 - Menu de gestão de compras
+! 0 - Sair
+! Escolha uma opção: 40
+! Opção inválida!
+  Menu Principal
+  1 - Abrir ficheiro
+  2 - Guardar ficheiro
+***************
+*** 57,63 ****
+  8 - Menu de gestão de compras
+  0 - Sair
+  Escolha uma opção: 3
+- Data actual: 46
+  Menu Principal
+  1 - Abrir ficheiro
+  2 - Guardar ficheiro
+--- 87,92 ----

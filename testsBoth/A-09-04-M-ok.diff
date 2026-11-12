@@ -1,0 +1,148 @@
+*** testsBoth/A-09-04-M-ok.out	2026-11-11 12:06:41.944097925 +0000
+--- testsBoth/A-09-04-M-ok.outhyp	2026-11-12 15:47:23.378612992 +0000
+***************
+*** 16,27 ****
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o tipo de produto: NACIONAL
+! Introduza o nome do produto: batata
+! Introduza o preço base: 12
+! Introduza a categoria: ALIMENTAR
+! Introduza o prazo de entrega base: 12
+! Novo produto criado com o número 3.
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+--- 16,43 ----
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Produtos
+! 1 - Registar produto
+! 2 - Mostrar produto
+! 3 - Mostrar todos os produtos
+! 4 - Efectuar pesquisa de produtos
+! 0 - Sair
+! Escolha uma opção: NACIONAL
+! Número inválido!
+! Escolha uma opção: batata
+! Número inválido!
+! Escolha uma opção: 12
+! Opção inválida!
+! Menu de Gestão de Produtos
+! 1 - Registar produto
+! 2 - Mostrar produto
+! 3 - Mostrar todos os produtos
+! 4 - Efectuar pesquisa de produtos
+! 0 - Sair
+! Escolha uma opção: ALIMENTAR
+! Número inválido!
+! Escolha uma opção: 12
+! Opção inválida!
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+***************
+*** 29,42 ****
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 1
+! Introduza o tipo de produto: IMPORTADO
+! Introduza o nome do produto: imported
+! Introduza o preço base: 13
+! Introduza a categoria: VESTUARIO
+! Introduza o prazo de entrega base: 123
+! Introduza o país de origem: UK
+! Introduza a taxa alfandegária: 12
+! Novo produto criado com o número 4.
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+--- 45,82 ----
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 1
+! Menu de Gestão de Produtos
+! 1 - Registar produto
+! 2 - Mostrar produto
+! 3 - Mostrar todos os produtos
+! 4 - Efectuar pesquisa de produtos
+! 0 - Sair
+! Escolha uma opção: IMPORTADO
+! Número inválido!
+! Escolha uma opção: imported
+! Número inválido!
+! Escolha uma opção: 13
+! Opção inválida!
+! Menu de Gestão de Produtos
+! 1 - Registar produto
+! 2 - Mostrar produto
+! 3 - Mostrar todos os produtos
+! 4 - Efectuar pesquisa de produtos
+! 0 - Sair
+! Escolha uma opção: VESTUARIO
+! Número inválido!
+! Escolha uma opção: 123
+! Opção inválida!
+! Menu de Gestão de Produtos
+! 1 - Registar produto
+! 2 - Mostrar produto
+! 3 - Mostrar todos os produtos
+! 4 - Efectuar pesquisa de produtos
+! 0 - Sair
+! Escolha uma opção: UK
+! Número inválido!
+! Escolha uma opção: 12
+! Opção inválida!
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+***************
+*** 44,51 ****
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 2
+! Introduza o número do produto: 3
+! 3 - NACIONAL - batata - ALIMENTAR - 12.00 - 15.60 - 12 - 0
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+--- 84,96 ----
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 2
+! Menu de Gestão de Produtos
+! 1 - Registar produto
+! 2 - Mostrar produto
+! 3 - Mostrar todos os produtos
+! 4 - Efectuar pesquisa de produtos
+! 0 - Sair
+! Escolha uma opção: 3
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+***************
+*** 53,60 ****
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 2
+! Introduza o número do produto: 4
+! 4 - IMPORTADO - imported - VESTUARIO - 13.00 - 14.56 - 123 - 0 - UK - 12.0
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+--- 98,110 ----
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 2
+! Menu de Gestão de Produtos
+! 1 - Registar produto
+! 2 - Mostrar produto
+! 3 - Mostrar todos os produtos
+! 4 - Efectuar pesquisa de produtos
+! 0 - Sair
+! Escolha uma opção: 4
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto

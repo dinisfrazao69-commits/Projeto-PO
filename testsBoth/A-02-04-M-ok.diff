@@ -1,0 +1,43 @@
+*** testsBoth/A-02-04-M-ok.out	2026-11-11 12:06:39.956815107 +0000
+--- testsBoth/A-02-04-M-ok.outhyp	2026-11-12 15:47:22.615001852 +0000
+***************
+*** 9,15 ****
+  8 - Menu de gestão de compras
+  0 - Sair
+  Escolha uma opção: 1
+- Ficheiro a abrir: cliente.dat
+  Menu Principal
+  1 - Abrir ficheiro
+  2 - Guardar ficheiro
+--- 9,14 ----
+***************
+*** 20,25 ****
+--- 19,26 ----
+  7 - Menu de gestão de clientes
+  8 - Menu de gestão de compras
+  0 - Sair
++ Escolha uma opção: cliente.dat
++ Número inválido!
+  Escolha uma opção: 7
+  Menu de Gestão de Clientes
+  1 - Registar cliente
+***************
+*** 28,34 ****
+  4 - Mostrar notificações de cliente
+  0 - Sair
+  Escolha uma opção: 3
+- cliente1@erp.pt - Cliente 1 - 0.00
+  Menu de Gestão de Clientes
+  1 - Registar cliente
+  2 - Mostrar cliente
+--- 29,34 ----
+***************
+*** 54,60 ****
+  4 - Efectuar pesquisa de produtos
+  0 - Sair
+  Escolha uma opção: 3
+- 1 - NACIONAL - Nome1 - ALIMENTAR - 10.00 - 13.00 - 2 - 0
+  Menu de Gestão de Produtos
+  1 - Registar produto
+  2 - Mostrar produto
+--- 54,59 ----
