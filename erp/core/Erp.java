@@ -23,16 +23,22 @@ class Erp implements Serializable {
   //FIXME maybe implement methods
   private Map<String, Client> _clients = new TreeMap<>(); 
   
-  void registerClient(String name, String email) 
-        throws ClientRegistrationException {
-
-          if (_clients.containsKey(email)) {
-              throw new ClientRegistrationException(name, email);
-          }
+  void registerClient(String name, String email) throws ClientRegistrationException {
+    if (_clients.containsKey(email)) {
+      throw new ClientRegistrationException(name, email);
+        }
           
           Client client = new Client(name, email);
           _clients.put(email, client);
   }
+
+  Client searchClient(String email) throws UnknownClientException {
+    if (!_clients.containsKey(email)) {
+      throw new UnknownClientException(email);
+    }
+    return _clients.get(email);
+  }
+
 
   /**
    * Read text input file at the beginning of the program and populates the
