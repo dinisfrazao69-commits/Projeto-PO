@@ -1,41 +1,13 @@
-*** testsBoth/A-03-02-M-ok.out	2026-11-12 15:51:27.751031218 +0000
---- testsBoth/A-03-02-M-ok.outhyp	2026-11-12 15:54:38.060942896 +0000
+*** testsBoth/A-03-02-M-ok.out	2026-11-11 12:06:40.267716568 +0000
+--- testsBoth/A-03-02-M-ok.outhyp	2026-11-14 12:20:08.145501316 +0000
 ***************
-*** 16,34 ****
-  4 - Mostrar notificações de cliente
-  0 - Sair
-  Escolha uma opção: 1
-- Introduza o nome do cliente: Palpatine
-- Introduza o endereço de correio do cliente: pal@star.uni
-- Novo cliente criado: pal@star.uni.
-  Menu de Gestão de Clientes
-  1 - Registar cliente
-  2 - Mostrar cliente
-  3 - Mostrar todos os clientes
+*** 26,33 ****
   4 - Mostrar notificações de cliente
   0 - Sair
   Escolha uma opção: 3
 - ahsoka@jedi.org - Ahsoka Tano - 0.00
 - obiwan@jedi.org - Obi-Wan Kenobi - 0.00
-- pal@star.uni - Palpatine - 0.00
+  pal@star.uni - Palpatine - 0.00
   Menu de Gestão de Clientes
   1 - Registar cliente
-  2 - Mostrar cliente
---- 16,32 ----
-  4 - Mostrar notificações de cliente
-  0 - Sair
-  Escolha uma opção: 1
-  Menu de Gestão de Clientes
-  1 - Registar cliente
-  2 - Mostrar cliente
-  3 - Mostrar todos os clientes
-  4 - Mostrar notificações de cliente
-  0 - Sair
-+ Escolha uma opção: Palpatine
-+ Número inválido!
-+ Escolha uma opção: pal@star.uni
-+ Número inválido!
-  Escolha uma opção: 3
-  Menu de Gestão de Clientes
-  1 - Registar cliente
-  2 - Mostrar cliente
+--- 26,31 ----

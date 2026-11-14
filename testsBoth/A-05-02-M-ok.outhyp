@@ -16,14 +16,14 @@ Menu de Gestão de Clientes
 4 - Mostrar notificações de cliente
 0 - Sair
 Escolha uma opção: 2
+Introduza o endereço de correio do cliente: ahsoka@jedi.org
+Mostrar cliente: Operação inválida: O cliente ahsoka@jedi.org não existe.
 Menu de Gestão de Clientes
 1 - Registar cliente
 2 - Mostrar cliente
 3 - Mostrar todos os clientes
 4 - Mostrar notificações de cliente
 0 - Sair
-Escolha uma opção: ahsoka@jedi.org
-Número inválido!
 Escolha uma opção: 0
 Menu Principal
 1 - Abrir ficheiro

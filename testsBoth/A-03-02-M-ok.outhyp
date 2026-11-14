@@ -16,17 +16,17 @@ Menu de Gestão de Clientes
 4 - Mostrar notificações de cliente
 0 - Sair
 Escolha uma opção: 1
+Introduza o nome do cliente: Palpatine
+Introduza o endereço de correio do cliente: pal@star.uni
+Novo cliente criado: pal@star.uni.
 Menu de Gestão de Clientes
 1 - Registar cliente
 2 - Mostrar cliente
 3 - Mostrar todos os clientes
 4 - Mostrar notificações de cliente
 0 - Sair
-Escolha uma opção: Palpatine
-Número inválido!
-Escolha uma opção: pal@star.uni
-Número inválido!
 Escolha uma opção: 3
+pal@star.uni - Palpatine - 0.00
 Menu de Gestão de Clientes
 1 - Registar cliente
 2 - Mostrar cliente

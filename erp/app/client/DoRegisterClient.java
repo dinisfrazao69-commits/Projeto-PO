@@ -1,9 +1,9 @@
 package erp.app.client;
 
 import erp.core.ErpManager;
-import erp.core.exception.ClientExceptions.ClientRegistrationException;
 import pt.tecnico.uilib.menus.Command;
 import pt.tecnico.uilib.menus.CommandException;
+import erp.core.exception.ClientExceptions.ClientRegistrationException;
 import erp.app.exception.ClientRegistrationFailedException;
 
 /** 

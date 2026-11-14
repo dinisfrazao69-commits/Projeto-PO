@@ -1,6 +1,10 @@
 package erp.app.company;
 
+import erp.app.exception.UnknownCompanyKeyException;
+import erp.app.exception.UnknownProductKeyException;
 import erp.core.ErpManager;
+import erp.core.exception.UnknownProductException;
+import erp.core.exception.CompanyExceptions.UnknownCompanyException;
 import pt.tecnico.uilib.menus.Command;
 import pt.tecnico.uilib.menus.CommandException;
 //FIXME maybe import classes
@@ -17,11 +21,36 @@ class DoChangeProductInventory extends Command<ErpManager> {
 
   DoChangeProductInventory(ErpManager receiver) {
     super(Label.CHANGE_PRODUCT_INVENTORY, receiver);
-    //FIXME maybe define fields
+    addIntegerField("companyId", Prompt.companyId());
+    addIntegerField("productId", erp.app.product.Prompt.productId());
+    addIntegerField("quantity", Prompt.amountToUpdate());
+    addRealField("factor",Prompt.priceFactor());
   }
 
   @Override
   protected final void execute() throws CommandException {
-    //FIXME implement command
+    int companyId = integerField("companyId");
+    int productId = integerField("productId");
+    int quantity = integerField("quantity");
+    double factor = realField("factor");
+
+    try{
+      boolean valor = _receiver.changeProductInventory(productId, companyId, quantity, factor);
+      if (valor){
+        _display.popup(Message.supplySuccessful(companyId, productId));
+      }
+      else{
+        _display.popup(Message.cannotChangeInventory(productId));
+      }
+    }
+    
+    catch(UnknownProductException e){
+      throw new UnknownProductKeyException(e.getId());
+    }
+
+    catch(UnknownCompanyException c){
+      throw new UnknownCompanyKeyException(c.getId());
+    }
+
   }
 }

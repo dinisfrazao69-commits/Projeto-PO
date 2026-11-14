@@ -1,43 +1,36 @@
-*** testsBoth/A-06-01-M-ok.out	2026-11-12 15:51:27.752695113 +0000
---- testsBoth/A-06-01-M-ok.outhyp	2026-11-12 15:54:38.347733300 +0000
+*** testsBoth/A-06-01-M-ok.out	2026-11-11 12:06:40.867726681 +0000
+--- testsBoth/A-06-01-M-ok.outhyp	2026-11-14 12:20:08.398873886 +0000
 ***************
-*** 18,25 ****
-  6 - Mostrar clientes de uma empresa
+*** 19,25 ****
   0 - Sair
   Escolha uma opção: 1
-- Introduza o nome da empresa: The empire
-- Nova empresa criada com o número 3.
+  Introduza o nome da empresa: The empire
+! Nova empresa criada com o número 3.
   Menu de Gestão de Empresas
   1 - Registar empresa
   2 - Mostrar empresa
---- 18,23 ----
+--- 19,25 ----
+  0 - Sair
+  Escolha uma opção: 1
+  Introduza o nome da empresa: The empire
+! Nova empresa criada com o número 1.
+  Menu de Gestão de Empresas
+  1 - Registar empresa
+  2 - Mostrar empresa
 ***************
-*** 28,36 ****
-  5 - Mostrar produtos de uma empresa
-  6 - Mostrar clientes de uma empresa
+*** 30,36 ****
   0 - Sair
   Escolha uma opção: 2
-! Introduza o número da empresa: 3
+  Introduza o número da empresa: 3
 ! 3 - The empire
   Menu de Gestão de Empresas
   1 - Registar empresa
   2 - Mostrar empresa
---- 26,43 ----
-  5 - Mostrar produtos de uma empresa
-  6 - Mostrar clientes de uma empresa
+--- 30,36 ----
   0 - Sair
-+ Escolha uma opção: The empire
-+ Número inválido!
   Escolha uma opção: 2
-! Menu de Gestão de Empresas
-! 1 - Registar empresa
-! 2 - Mostrar empresa
-! 3 - Mostrar todas as empresas
-! 4 - Alterar inventário de um produto
-! 5 - Mostrar produtos de uma empresa
-! 6 - Mostrar clientes de uma empresa
-! 0 - Sair
-! Escolha uma opção: 3
+  Introduza o número da empresa: 3
+! Mostrar empresa: Operação inválida: A empresa 3 não existe.
   Menu de Gestão de Empresas
   1 - Registar empresa
   2 - Mostrar empresa

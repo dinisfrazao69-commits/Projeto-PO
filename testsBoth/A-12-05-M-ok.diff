@@ -1,30 +1,21 @@
-*** testsBoth/A-12-05-M-ok.out	2026-11-12 15:51:27.755319662 +0000
---- testsBoth/A-12-05-M-ok.outhyp	2026-11-12 15:54:39.549951655 +0000
+*** testsBoth/A-12-05-M-ok.out	2026-11-11 12:06:42.776733227 +0000
+--- testsBoth/A-12-05-M-ok.outhyp	2026-11-14 12:20:09.174388650 +0000
 ***************
-*** 18,27 ****
-  6 - Mostrar clientes de uma empresa
+*** 19,27 ****
   0 - Sair
   Escolha uma opção: 5
-! Introduza o número da empresa: 1
+  Introduza o número da empresa: 1
 ! 1 - 1 - 10 - 1.0 - 19.50
 ! 1 - 3 - 20 - 1.0 - 58.50
 ! 1 - 4 - 30 - 1.0 - 2.60
   Menu de Gestão de Empresas
   1 - Registar empresa
   2 - Mostrar empresa
---- 18,32 ----
-  6 - Mostrar clientes de uma empresa
+--- 19,25 ----
   0 - Sair
   Escolha uma opção: 5
-! Menu de Gestão de Empresas
-! 1 - Registar empresa
-! 2 - Mostrar empresa
-! 3 - Mostrar todas as empresas
-! 4 - Alterar inventário de um produto
-! 5 - Mostrar produtos de uma empresa
-! 6 - Mostrar clientes de uma empresa
-! 0 - Sair
-! Escolha uma opção: 1
+  Introduza o número da empresa: 1
+! Mostrar produtos de uma empresa: Operação inválida: A empresa 1 não existe.
   Menu de Gestão de Empresas
   1 - Registar empresa
   2 - Mostrar empresa

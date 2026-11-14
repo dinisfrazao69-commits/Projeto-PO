@@ -1,39 +1,5 @@
-*** testsBoth/A-02-03-M-ok.out	2026-11-12 15:51:27.751031218 +0000
---- testsBoth/A-02-03-M-ok.outhyp	2026-11-12 15:54:37.877247151 +0000
-***************
-*** 16,30 ****
-  4 - Mostrar notificações de cliente
-  0 - Sair
-  Escolha uma opção: 1
-- Introduza o nome do cliente: Cliente 1
-- Introduza o endereço de correio do cliente: cliente1@erp.pt
-- Novo cliente criado: cliente1@erp.pt.
-  Menu de Gestão de Clientes
-  1 - Registar cliente
-  2 - Mostrar cliente
-  3 - Mostrar todos os clientes
-  4 - Mostrar notificações de cliente
-  0 - Sair
-  Escolha uma opção: 0
-  Menu Principal
-  1 - Abrir ficheiro
---- 16,31 ----
-  4 - Mostrar notificações de cliente
-  0 - Sair
-  Escolha uma opção: 1
-  Menu de Gestão de Clientes
-  1 - Registar cliente
-  2 - Mostrar cliente
-  3 - Mostrar todos os clientes
-  4 - Mostrar notificações de cliente
-  0 - Sair
-+ Escolha uma opção: Cliente 1
-+ Número inválido!
-+ Escolha uma opção: cliente1@erp.pt
-+ Número inválido!
-  Escolha uma opção: 0
-  Menu Principal
-  1 - Abrir ficheiro
+*** testsBoth/A-02-03-M-ok.out	2026-11-11 12:06:39.808254709 +0000
+--- testsBoth/A-02-03-M-ok.outhyp	2026-11-14 12:20:07.965818661 +0000
 ***************
 *** 44,55 ****
   4 - Efectuar pesquisa de produtos
@@ -48,7 +14,7 @@
   Menu de Gestão de Produtos
   1 - Registar produto
   2 - Mostrar produto
---- 45,71 ----
+--- 44,70 ----
   4 - Efectuar pesquisa de produtos
   0 - Sair
   Escolha uma opção: 1
@@ -85,7 +51,7 @@
   Menu de Gestão de Produtos
   1 - Registar produto
   2 - Mostrar produto
---- 73,78 ----
+--- 72,77 ----
 ***************
 *** 76,82 ****
   8 - Menu de gestão de compras
@@ -95,10 +61,10 @@
   Menu Principal
   1 - Abrir ficheiro
   2 - Guardar ficheiro
---- 91,96 ----
+--- 90,95 ----
 ***************
 *** 87,90 ****
---- 101,106 ----
+--- 100,105 ----
   7 - Menu de gestão de clientes
   8 - Menu de gestão de compras
   0 - Sair

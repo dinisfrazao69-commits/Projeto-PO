@@ -49,7 +49,8 @@ public class ErpManager {
 
   public boolean changeProductInventory(int productId, int companyId, int quantity, double factor) throws UnknownCompanyException, UnknownProductException{
     boolean valor = _erp.changeProductInventory(productId, companyId, quantity, factor);
-    _modified = true;
+    if (valor)
+      _modified = true;
     return valor;
   }
 

@@ -1,85 +1,36 @@
-*** testsBoth/A-13-02-M-ok.out	2026-11-12 15:51:27.756069485 +0000
---- testsBoth/A-13-02-M-ok.outhyp	2026-11-12 15:54:39.777819759 +0000
+*** testsBoth/A-13-02-M-ok.out	2026-11-11 12:06:43.196143696 +0000
+--- testsBoth/A-13-02-M-ok.outhyp	2026-11-14 12:20:09.346004998 +0000
 ***************
-*** 18,28 ****
-  6 - Mostrar clientes de uma empresa
-  0 - Sair
-  Escolha uma opção: 4
-! Introduza o número da empresa: 1
-! Introduza o número do produto: 1
-! Introduza a quantidade a actualizar: 30
-! Introduza o factor multiplicativo do preço recomendado: 1
+*** 22,28 ****
+  Introduza o número do produto: 1
+  Introduza a quantidade a actualizar: 30
+  Introduza o factor multiplicativo do preço recomendado: 1
 ! A empresa 1 passou a disponibilizar o produto 1.
   Menu de Gestão de Empresas
   1 - Registar empresa
   2 - Mostrar empresa
---- 18,60 ----
-  6 - Mostrar clientes de uma empresa
-  0 - Sair
-  Escolha uma opção: 4
-! Menu de Gestão de Empresas
-! 1 - Registar empresa
-! 2 - Mostrar empresa
-! 3 - Mostrar todas as empresas
-! 4 - Alterar inventário de um produto
-! 5 - Mostrar produtos de uma empresa
-! 6 - Mostrar clientes de uma empresa
-! 0 - Sair
-! Escolha uma opção: 1
-! Menu de Gestão de Empresas
-! 1 - Registar empresa
-! 2 - Mostrar empresa
-! 3 - Mostrar todas as empresas
-! 4 - Alterar inventário de um produto
-! 5 - Mostrar produtos de uma empresa
-! 6 - Mostrar clientes de uma empresa
-! 0 - Sair
-! Escolha uma opção: 1
-! Menu de Gestão de Empresas
-! 1 - Registar empresa
-! 2 - Mostrar empresa
-! 3 - Mostrar todas as empresas
-! 4 - Alterar inventário de um produto
-! 5 - Mostrar produtos de uma empresa
-! 6 - Mostrar clientes de uma empresa
-! 0 - Sair
-! Escolha uma opção: 30
-! Opção inválida!
-! Menu de Gestão de Empresas
-! 1 - Registar empresa
-! 2 - Mostrar empresa
-! 3 - Mostrar todas as empresas
-! 4 - Alterar inventário de um produto
-! 5 - Mostrar produtos de uma empresa
-! 6 - Mostrar clientes de uma empresa
-! 0 - Sair
-! Escolha uma opção: 1
+--- 22,28 ----
+  Introduza o número do produto: 1
+  Introduza a quantidade a actualizar: 30
+  Introduza o factor multiplicativo do preço recomendado: 1
+! Alterar inventário de um produto: Operação inválida: A empresa 1 não existe.
   Menu de Gestão de Empresas
   1 - Registar empresa
   2 - Mostrar empresa
 ***************
-*** 32,39 ****
-  6 - Mostrar clientes de uma empresa
+*** 33,39 ****
   0 - Sair
   Escolha uma opção: 5
-! Introduza o número da empresa: 1
+  Introduza o número da empresa: 1
 ! 1 - 1 - 30 - 1.0 - 19.50
   Menu de Gestão de Empresas
   1 - Registar empresa
   2 - Mostrar empresa
---- 64,78 ----
-  6 - Mostrar clientes de uma empresa
+--- 33,39 ----
   0 - Sair
   Escolha uma opção: 5
-! Menu de Gestão de Empresas
-! 1 - Registar empresa
-! 2 - Mostrar empresa
-! 3 - Mostrar todas as empresas
-! 4 - Alterar inventário de um produto
-! 5 - Mostrar produtos de uma empresa
-! 6 - Mostrar clientes de uma empresa
-! 0 - Sair
-! Escolha uma opção: 1
+  Introduza o número da empresa: 1
+! Mostrar produtos de uma empresa: Operação inválida: A empresa 1 não existe.
   Menu de Gestão de Empresas
   1 - Registar empresa
   2 - Mostrar empresa
