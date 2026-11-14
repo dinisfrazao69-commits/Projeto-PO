@@ -1,5 +1,5 @@
 
-package erp.core.exception;
+package erp.core.exception.ClientExceptions;
 
 
 public class ClientRegistrationException extends Exception {

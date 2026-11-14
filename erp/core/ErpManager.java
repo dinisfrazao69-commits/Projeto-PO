@@ -1,6 +1,11 @@
 package erp.core;
 
 import erp.core.exception.*;
+import erp.core.exception.ClientExceptions.ClientRegistrationException;
+import erp.core.exception.ClientExceptions.UnknownClientException;
+import erp.core.exception.CompanyExceptions.CompanyRegistrationException;
+import erp.core.exception.CompanyExceptions.UnknownCompanyException;
+
 import java.io.*;
 import java.util.List;
 
@@ -16,7 +21,7 @@ public class ErpManager {
   private Erp _erp = new Erp();
   private boolean _modified = false;
 
-  public List <Client> listClients(){
+  public List<Client> listClients(){
     return _erp.listClients();
   }
   public void registerClient(String name, String email) throws ClientRegistrationException {
@@ -27,6 +32,31 @@ public class ErpManager {
   public Client searchClient(String email) throws UnknownClientException {
     return _erp.searchClient(email);
   }
+
+  public int registerCompany(String name) throws CompanyRegistrationException{
+    int id = _erp.registerCompany(name);
+    _modified = true;
+    return id;
+  }
+
+  public Company searchCompany(int id) throws UnknownCompanyException{
+    return _erp.searchCompany(id);
+  }
+
+  public List<Company> listCompanies(){
+    return _erp.listCompanies();
+  }
+
+  public boolean changeProductInventory(int productId, int companyId, int quantity, double factor) throws UnknownCompanyException, UnknownProductException{
+    boolean valor = _erp.changeProductInventory(productId, companyId, quantity, factor);
+    _modified = true;
+    return valor;
+  }
+
+  public List<SuppliedProduct> listCompanyProducts(int companyID) throws UnknownCompanyException{
+    return _erp.listCompanyProducts(companyID);
+  }
+
 
   // --- persistence -------------------------------------------------------
 

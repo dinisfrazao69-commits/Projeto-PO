@@ -1,6 +1,11 @@
 package erp.core;
 
 import erp.core.exception.*;
+import erp.core.exception.ClientExceptions.ClientRegistrationException;
+import erp.core.exception.ClientExceptions.UnknownClientException;
+import erp.core.exception.CompanyExceptions.CompanyRegistrationException;
+import erp.core.exception.CompanyExceptions.UnknownCompanyException;
+
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.Map;
@@ -24,7 +29,13 @@ class Erp implements Serializable {
 
 
   //FIXME maybe implement methods
+  private int _companiesId = 1;
+  private int _productsId = 1;
+  private Map<Integer, Company> _companies= new TreeMap<>();
   private Map<String, Client> _clients = new TreeMap<>(); 
+  private Map<Integer, Product> _products = new TreeMap<>();
+
+
 
   List <Client> listClients() {
     List<Client> clients = new ArrayList<>(_clients.values());
@@ -54,6 +65,73 @@ class Erp implements Serializable {
     }
     return _clients.get(email);
   }
+
+
+
+Product searchProduct(int id) throws UnknownProductException{
+    if(!_products.containsKey(id)){
+      throw new UnknownProductException(id);
+    }
+    return _products.get(id);
+  }
+
+
+
+  int registerCompany(String name) throws CompanyRegistrationException{
+    if (name.isBlank()){
+      throw new CompanyRegistrationException(name);
+    }
+    Company company = new Company(this._companiesId, name);
+    _companies.put(company.getId(), company);
+    return this._companiesId++;
+  }
+
+  Company searchCompany(int id) throws UnknownCompanyException{
+    if(!_companies.containsKey(id)){
+      throw new UnknownCompanyException(id);
+    }
+    return _companies.get(id);
+  }
+
+  List<Company> listCompanies(){
+    List<Company> companies = new ArrayList<>();
+
+    for (Company p: this._companies.values()){
+      companies.add(p);
+    }
+    return companies;
+  }
+
+  boolean changeProductInventory(int productId, int companyId, int quantity, double factor) throws UnknownCompanyException, UnknownProductException{
+    Company c = searchCompany(companyId);
+    Product p = searchProduct(productId);
+    SuppliedProduct stock = c.getProduct(productId);
+    if (stock != null){
+      return stock.update(quantity,factor);//O update atualiza os dados daquele produto naquela empresa
+    }
+    if (quantity <=0 || factor <= 0){
+      return false;
+    }
+    SuppliedProduct novo = new SuppliedProduct(c, p, quantity, factor);
+    c.addProduct(novo);
+    p.addSupply(novo);
+    return true;
+    }
+
+  
+  List<SuppliedProduct> listCompanyProducts(int companyID) throws UnknownCompanyException{
+    Company company = searchCompany(companyID);
+    return company.listProducts();
+    
+  }
+
+
+
+
+
+  
+
+
 
 
   /**
