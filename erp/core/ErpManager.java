@@ -33,6 +33,28 @@ public class ErpManager {
     return _erp.searchClient(email);
   }
 
+  public int registerNationalProduct(String name, int basePrice, String category, int baseDeliveryTime) 
+    throws ProductRegistrationException {
+      int id = _erp.registerNationalProduct(name, basePrice, category, baseDeliveryTime);
+      _modified = true;
+      return id;
+    } 
+
+  public int registerImportedProduct(String name, int basePrice, String category, int baseDeliveryTime, String country, double tax)
+    throws ProductRegistrationException {
+      int id = _erp.registerImportedProduct(name, basePrice, category, baseDeliveryTime, country, tax);
+      _modified = true;
+      return id;
+    }
+
+  public List<Product> listProducts() {
+    return _erp.listProducts();
+  }
+
+  public Product searchProduct(int id) throws UnknownProductException {
+    return _erp.searchProduct(id);
+  }
+
   public int registerCompany(String name) throws CompanyRegistrationException{
     int id = _erp.registerCompany(name);
     _modified = true;
@@ -109,8 +131,10 @@ public class ErpManager {
    **/
   public void importFile(String filename) throws ImportFileException {
     try {
-      if (filename != null && !filename.isEmpty())
-        _erp.importFile(filename);
+      if (filename != null && !filename.isEmpty()) {
+        Parser parser = new Parser(this);
+        parser.parseFile(filename);
+      }
     } catch (IOException | UnrecognizedEntryException /* FIXME maybe other exceptions */ e) {
       throw new ImportFileException(filename, e);
     }

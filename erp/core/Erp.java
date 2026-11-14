@@ -68,12 +68,58 @@ class Erp implements Serializable {
 
 
 
-Product searchProduct(int id) throws UnknownProductException{
+  Product searchProduct(int id) throws UnknownProductException{
     if(!_products.containsKey(id)){
       throw new UnknownProductException(id);
     }
     return _products.get(id);
   }
+
+  List <Product> listProducts() {
+    List<Product> products = new ArrayList<>();
+
+    for (Product p: this._products.values()){
+      products.add(p);
+    }
+    return products;
+  }
+
+  int registerNationalProduct(String name, int basePrice, String category, int baseDeliveryTime)
+      throws ProductRegistrationException {
+        if (name.isBlank() || basePrice <= 0) {
+          throw new ProductRegistrationException(name);
+        }
+
+        ProductCategory productCategory;
+
+        try {
+          productCategory = ProductCategory.valueOf(category); //basicamente verifica se a categoria existe 
+        } catch (IllegalArgumentException e) {
+             throw new ProductRegistrationException(name);
+          }
+        NationalProduct product = new NationalProduct(_productsId, name, productCategory, basePrice, baseDeliveryTime);
+
+        _products.put(product.getId(), product);
+        return this._productsId++;
+      }
+
+  int registerImportedProduct(String name, int basePrice, String category, int baseDeliveryTime, String country, double tax)
+      throws ProductRegistrationException {
+        if (name.isBlank() || basePrice <= 0 || country.isBlank()) {
+          throw new ProductRegistrationException(name);
+        }
+        ProductCategory productCategory;
+
+        try {
+          productCategory = ProductCategory.valueOf(category);
+        } catch (IllegalArgumentException e) {
+            throw new  ProductRegistrationException(name);
+        }
+        ImportedProduct product = new ImportedProduct(_productsId, name, productCategory, basePrice, baseDeliveryTime, tax, country);
+
+        _products.put(product.getId(), product);
+        return this._productsId++;
+      }
 
 
 

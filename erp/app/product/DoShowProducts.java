@@ -17,6 +17,6 @@ class DoShowProducts extends Command<ErpManager> {
 
   @Override
   protected final void execute() {
-    //FIXME implement command
+    _display.popup(_receiver.listProducts());
   }
 }

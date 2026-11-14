@@ -3,7 +3,9 @@ package erp.app.product;
 import erp.core.ErpManager;
 import pt.tecnico.uilib.menus.Command;
 import pt.tecnico.uilib.menus.CommandException;
-//FIXME maybe import classes
+import erp.core.exception.ProductRegistrationException;
+import erp.app.exception.ProductRegistrationFailedException;
+import pt.tecnico.uilib.forms.Form;
 
 /**
  * Registers a product in the system's global registry. The extra fields of the
@@ -14,11 +16,38 @@ class DoRegisterProduct extends Command<ErpManager> {
 
   DoRegisterProduct(ErpManager receiver) {
     super(Label.REGISTER_PRODUCT, receiver);
-    //FIXME maybe define fields
+    addStringField("type", Prompt.productType());
+    addStringField("name", Prompt.productName());
+    addIntegerField("basePrice", Prompt.basePrice());
+    addStringField("category", Prompt.productCategory());
+    addIntegerField("baseDeliveryTime", Prompt.baseDelay());
   }
 
   @Override
   protected final void execute() throws CommandException {
-    //FIXME implement command
+    String type = stringField("type");
+    String name = stringField("name");
+    int basePrice = integerField("basePrice");
+    String category = stringField("category");
+    int baseDeliveryTime = integerField("baseDeliveryTime");
+  
+    try {
+      if (type.equals("NACIONAL")) {
+        int id = _receiver.registerNationalProduct(name, basePrice, category, baseDeliveryTime);
+        _display.popup(Message.registrationSuccessful(id));
+      }
+      else if (type.equals("IMPORTADO")) { //aqui vamos ter 2 perguntas que so existem no importado
+        String country = Form.requestString(Prompt.originCountry());
+        double tax = Form.requestReal(Prompt.customsTax());
+        int id = _receiver.registerImportedProduct(name, basePrice, category, baseDeliveryTime, country, tax);
+        _display.popup(Message.registrationSuccessful(id));
+      }
+      else {
+        throw new ProductRegistrationFailedException(name);
+      }
+    } catch (ProductRegistrationException e) {
+        throw new ProductRegistrationFailedException(name);
+      }
+    
   }
 }

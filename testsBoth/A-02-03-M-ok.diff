@@ -1,57 +1,5 @@
-*** testsBoth/A-02-03-M-ok.out	2026-11-11 12:06:39.808254709 +0000
---- testsBoth/A-02-03-M-ok.outhyp	2026-11-14 12:20:07.965818661 +0000
-***************
-*** 44,55 ****
-  4 - Efectuar pesquisa de produtos
-  0 - Sair
-  Escolha uma opção: 1
-! Introduza o tipo de produto: NACIONAL
-! Introduza o nome do produto: Nome1
-! Introduza o preço base: 10
-! Introduza a categoria: ALIMENTAR
-! Introduza o prazo de entrega base: 2
-! Novo produto criado com o número 1.
-  Menu de Gestão de Produtos
-  1 - Registar produto
-  2 - Mostrar produto
---- 44,70 ----
-  4 - Efectuar pesquisa de produtos
-  0 - Sair
-  Escolha uma opção: 1
-! Menu de Gestão de Produtos
-! 1 - Registar produto
-! 2 - Mostrar produto
-! 3 - Mostrar todos os produtos
-! 4 - Efectuar pesquisa de produtos
-! 0 - Sair
-! Escolha uma opção: NACIONAL
-! Número inválido!
-! Escolha uma opção: Nome1
-! Número inválido!
-! Escolha uma opção: 10
-! Opção inválida!
-! Menu de Gestão de Produtos
-! 1 - Registar produto
-! 2 - Mostrar produto
-! 3 - Mostrar todos os produtos
-! 4 - Efectuar pesquisa de produtos
-! 0 - Sair
-! Escolha uma opção: ALIMENTAR
-! Número inválido!
-! Escolha uma opção: 2
-  Menu de Gestão de Produtos
-  1 - Registar produto
-  2 - Mostrar produto
-***************
-*** 57,63 ****
-  4 - Efectuar pesquisa de produtos
-  0 - Sair
-  Escolha uma opção: 3
-- 1 - NACIONAL - Nome1 - ALIMENTAR - 10.00 - 13.00 - 2 - 0
-  Menu de Gestão de Produtos
-  1 - Registar produto
-  2 - Mostrar produto
---- 72,77 ----
+*** testsBoth/A-02-03-M-ok.out	2026-11-12 15:51:27.751031218 +0000
+--- testsBoth/A-02-03-M-ok.outhyp	2026-11-14 20:32:41.315101162 +0000
 ***************
 *** 76,82 ****
   8 - Menu de gestão de compras
@@ -61,10 +9,10 @@
   Menu Principal
   1 - Abrir ficheiro
   2 - Guardar ficheiro
---- 90,95 ----
+--- 76,81 ----
 ***************
 *** 87,90 ****
---- 100,105 ----
+--- 86,91 ----
   7 - Menu de gestão de clientes
   8 - Menu de gestão de compras
   0 - Sair

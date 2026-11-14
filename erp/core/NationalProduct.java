@@ -20,7 +20,7 @@ public class NationalProduct extends Product{
         int units = totalUnits();
         int basePrice = getBasePrice();
 
-        if (units > 1000){
+        if (units > 10000){
             return basePrice * 0.9;
         }
         if (units < 100){
