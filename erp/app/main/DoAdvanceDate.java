@@ -12,11 +12,11 @@ class DoAdvanceDate extends Command<ErpManager> {
 
   DoAdvanceDate(ErpManager receiver) {
     super(Label.ADVANCE_DATE, receiver);
-    //FIXME maybe define fields
+    addIntegerField("days", Prompt.daysToAdvance());
   }
 
   @Override
   protected final void execute() throws CommandException {
-    //FIXME implement command
+    _receiver.advanceDate(integerField("days"));
   }
 }

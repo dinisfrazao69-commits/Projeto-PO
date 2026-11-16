@@ -31,6 +31,7 @@ class Erp implements Serializable {
   //FIXME maybe implement methods
   private int _companiesId = 1;
   private int _productsId = 1;
+  private int _dateAtual = 1;
   private Map<Integer, Company> _companies= new TreeMap<>();
   private Map<String, Client> _clients = new TreeMap<>(); 
   private Map<Integer, Product> _products = new TreeMap<>();
@@ -171,13 +172,15 @@ class Erp implements Serializable {
     
   }
 
+  int getDateAtual() {
+    return _dateAtual;
+  } 
 
-
-
-
-  
-
-
+  void advanceDate(int days) {
+    for (int i = 0; i < days; i++) {
+      _dateAtual++;
+    }
+  }
 
 
   /**
@@ -190,6 +193,7 @@ class Erp implements Serializable {
    **/
   void importFile(String filename) throws UnrecognizedEntryException, IOException
                        /* FIXME maybe other exceptions */ {
-    //FIXME implement method
+    new Parser(this).parseFile(filename);
+    
   }
 }

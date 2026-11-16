@@ -80,6 +80,15 @@ public class ErpManager {
     return _erp.listCompanyProducts(companyID);
   }
 
+  public int getDateAtual() {
+    return _erp.getDateAtual();
+  }
+
+  public void advanceDate(int days) {
+    _erp.advanceDate(days);
+    _modified = true;
+  }
+
 
   // --- persistence -------------------------------------------------------
 
@@ -132,8 +141,8 @@ public class ErpManager {
   public void importFile(String filename) throws ImportFileException {
     try {
       if (filename != null && !filename.isEmpty()) {
-        Parser parser = new Parser(this);
-        parser.parseFile(filename);
+        _erp.importFile(filename);
+        _modified = true;
       }
     } catch (IOException | UnrecognizedEntryException /* FIXME maybe other exceptions */ e) {
       throw new ImportFileException(filename, e);

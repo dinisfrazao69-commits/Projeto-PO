@@ -18,11 +18,10 @@ import erp.core.exception.CompanyExceptions.CompanyRegistrationException;
 import erp.core.exception.CompanyExceptions.UnknownCompanyException;
 
 class Parser {
+  private Erp _erp;
 
-  private ErpManager _manager;
-
-  Parser(ErpManager manager) {
-    _manager = manager;
+  Parser(Erp erp) {
+    _erp = erp;
   }
 
   void parseFile(String fileName) throws IOException, UnrecognizedEntryException {
@@ -76,14 +75,14 @@ class Parser {
   private void parseCompany(String[] components, String line)
     throws UnrecognizedEntryException, CompanyRegistrationException {
     checkCorrectNumberOfFields(components, 2, line);
-    _manager.registerCompany(components[1]);
+    _erp.registerCompany(components[1]);
   }
 
   // IMPORTED:nome:preçoBase:categoria:prazo:paisOrigem:taxa
   private void parseImported(String[] components, String line)
     throws UnrecognizedEntryException, ProductRegistrationException {
     checkCorrectNumberOfFields(components, 7, line);
-    _manager.registerImportedProduct(components[1], Integer.valueOf(components[2]), components[3],
+    _erp.registerImportedProduct(components[1], Integer.valueOf(components[2]), components[3],
                                      Integer.valueOf(components[4]), components[5], Double.valueOf(components[6]));
   }
 
@@ -91,7 +90,7 @@ class Parser {
   private void parseNational(String[] components, String line)
     throws UnrecognizedEntryException, ProductRegistrationException {
     checkCorrectNumberOfFields(components, 5, line);
-    _manager.registerNationalProduct(components[1], Integer.valueOf(components[2]), components[3],
+    _erp.registerNationalProduct(components[1], Integer.valueOf(components[2]), components[3],
                                      Integer.valueOf(components[4]));
   }
 
@@ -99,7 +98,7 @@ class Parser {
   private void parseClient(String[] components, String line)
     throws UnrecognizedEntryException, ClientRegistrationException {
     checkCorrectNumberOfFields(components, 3, line);
-    _manager.registerClient(components[1], components[2]);
+    _erp.registerClient(components[1], components[2]);
   }
 
   // SUPPLY:idEmpresa:idProduto:unidades:factor
@@ -107,7 +106,7 @@ class Parser {
   private void parseSupply(String[] components, String line)
     throws UnrecognizedEntryException, UnknownCompanyException, UnknownProductException {
     checkCorrectNumberOfFields(components, 5, line);
-    _manager.changeProductInventory(Integer.valueOf(components[2]), Integer.valueOf(components[1]),
+    _erp.changeProductInventory(Integer.valueOf(components[2]), Integer.valueOf(components[1]),
                                     Integer.valueOf(components[3]), Double.valueOf(components[4]));
   }
 
@@ -115,7 +114,7 @@ class Parser {
   private void parseRate(String[] components, String line) throws UnrecognizedEntryException {
     checkCorrectNumberOfFields(components, 4, line);
     // TODO: quando existir a ShippingRate:
-    // _manager.registerShippingRate(components[1], Integer.valueOf(components[2]), Integer.valueOf(components[3]));
+    // _erp.registerShippingRate(components[1], Integer.valueOf(components[2]), Integer.valueOf(components[3]));
   }
 
 }
