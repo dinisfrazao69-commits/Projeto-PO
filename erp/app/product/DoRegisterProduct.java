@@ -16,19 +16,19 @@ class DoRegisterProduct extends Command<ErpManager> {
 
   DoRegisterProduct(ErpManager receiver) {
     super(Label.REGISTER_PRODUCT, receiver);
-    addStringField("type", Prompt.productType());
+    addOptionField("type", Prompt.productType(), _receiver.productTypes());
     addStringField("name", Prompt.productName());
     addIntegerField("basePrice", Prompt.basePrice());
-    addStringField("category", Prompt.productCategory());
+    addOptionField("category", Prompt.productCategory(), _receiver.productCategories());
     addIntegerField("baseDeliveryTime", Prompt.baseDelay());
   }
 
   @Override
   protected final void execute() throws CommandException {
-    String type = stringField("type");
+    String type = optionField("type");
     String name = stringField("name");
     int basePrice = integerField("basePrice");
-    String category = stringField("category");
+    String category = optionField("category");
     int baseDeliveryTime = integerField("baseDeliveryTime");
   
     try {
@@ -41,9 +41,6 @@ class DoRegisterProduct extends Command<ErpManager> {
         double tax = Form.requestReal(Prompt.customsTax());
         int id = _receiver.registerImportedProduct(name, basePrice, category, baseDeliveryTime, country, tax);
         _display.popup(Message.registrationSuccessful(id));
-      }
-      else {
-        throw new ProductRegistrationFailedException(name);
       }
     } catch (ProductRegistrationException e) {
         throw new ProductRegistrationFailedException(name);

@@ -12,11 +12,15 @@ class DoPerformSearch extends Command<ErpManager> {
 
   DoPerformSearch(ErpManager receiver) {
     super(Label.PERFORM_SEARCH, receiver);
-    //FIXME maybe define fields
+    addOptionField("criteria", Prompt.searchCriterion(), _receiver.searchCriteria());
+    addStringField("term", Prompt.searchTerm());
   }
 
   @Override
   protected final void execute() throws CommandException {
-    //FIXME implement command
+    String criteria = optionField("criteria");
+    String term = stringField("term");
+    _display.popup(_receiver.searchProducts(criteria, term));
+
   }
 }

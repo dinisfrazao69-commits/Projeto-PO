@@ -121,6 +121,50 @@ class Erp implements Serializable {
         _products.put(product.getId(), product);
         return this._productsId++;
       }
+  
+
+
+  String[] productTypes() {
+    return new String[] { "NACIONAL", "IMPORTADO" };
+  }
+
+  String[] searchCriteria(){
+    return new String[] { "NOME", "CATEGORIA", "ORIGEM"};
+  }
+
+  String[] productCategories() {
+    ProductCategory[] values = ProductCategory.values();
+    String[] names = new String[values.length];
+    for (int i = 0; i < values.length; i++)
+      names[i] = values[i].name();
+    return names;
+  }
+      
+
+      
+  List<Product> searchProducts(String criterio, String objetivo){
+    List<Product> procura = new ArrayList<>();
+    for (Product p: _products.values()){
+      switch (criterio){
+        case "NOME":
+          if (p.getName().equalsIgnoreCase(objetivo)){
+            procura.add(p);
+          }
+          break;
+        case "CATEGORIA":
+          if(p.getCategory().name().equalsIgnoreCase(objetivo)){
+            procura.add(p);
+          }
+          break;
+        case "ORIGEM":
+          if(p.hasOrigin(objetivo)){
+            procura.add(p);
+          }
+          break;
+      }
+    }
+    return procura;
+  }
 
 
 
@@ -148,6 +192,8 @@ class Erp implements Serializable {
     }
     return companies;
   }
+
+
 
   boolean changeProductInventory(int productId, int companyId, int quantity, double factor) throws UnknownCompanyException, UnknownProductException{
     Company c = searchCompany(companyId);

@@ -55,6 +55,26 @@ public class ErpManager {
     return _erp.searchProduct(id);
   }
 
+
+  public String[] productTypes() {
+  return _erp.productTypes();
+}
+
+  public String[] productCategories() {
+    return _erp.productCategories();
+  }
+
+  public String[] searchCriteria(){
+    return _erp.searchCriteria();
+  }
+
+  public List<Product> searchProducts(String criterio, String objetivo){
+    return _erp.searchProducts(criterio, objetivo);
+   }
+
+
+
+
   public int registerCompany(String name) throws CompanyRegistrationException{
     int id = _erp.registerCompany(name);
     _modified = true;

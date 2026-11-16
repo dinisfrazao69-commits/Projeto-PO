@@ -58,6 +58,10 @@ public abstract class Product implements Serializable{
         this._supplies.add(p);
     }
 
+    boolean hasOrigin(String origin){
+        return false;
+    }
+
 
 
 

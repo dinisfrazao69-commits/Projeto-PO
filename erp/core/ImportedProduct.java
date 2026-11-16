@@ -43,4 +43,9 @@ public class ImportedProduct extends Product{
         return super.toString() + " - " + this._country + " - " + this._tax;
 
     }
+
+    @Override 
+    boolean hasOrigin(String country){
+        return this._country.equalsIgnoreCase(country);
+    }
 }
