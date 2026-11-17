@@ -165,7 +165,17 @@ public class ErpManager {
    *         an error while processing this file.
    **/
   public void load(String filename) throws UnavailableFileException {
-    //FIXME implement method
+    Erp loadedState;
+
+    try (FileInputStream file = new FileInputStream(filename); ObjectInputStream input = new ObjectInputStream(file)) {
+      Object object = input.readObject();
+      loadedState = (Erp) object;
+    } catch (IOException | ClassNotFoundException | ClassCastException e) {
+      throw new UnavailableFileException(filename);
+    }
+    _erp = loadedState;
+    _filename = filename;
+    _modified = false;
   }
 
   /**
