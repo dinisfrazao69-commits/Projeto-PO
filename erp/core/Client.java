@@ -1,6 +1,8 @@
 package erp.core;
 
 import java.io.Serializable;
+import java.util.Map;
+import java.util.TreeMap;
 
 
 
@@ -16,12 +18,14 @@ public class Client implements Serializable {
     private String _name;
     private String _email;
     private double _totalSpent;
+    private Map<Integer, Basket> _baskets;
 
 
     public Client(String name, String email){
         this._email = email;
         this._name = name;
         this._totalSpent = 0.0;
+        this._baskets = new TreeMap<>();
     }
 
     public String getName(){
@@ -30,6 +34,15 @@ public class Client implements Serializable {
     
     public String getEmail(){
         return this._email;
+    }
+
+
+    public Basket getBasket(Company company){
+        int id = company.getId();
+        if (this._baskets.get(id) == null){
+            _baskets.put(id, new Basket(this, company));
+        }
+        return this._baskets.get(id);
     }
 
     @Override

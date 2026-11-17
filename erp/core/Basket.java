@@ -23,7 +23,6 @@ public class Basket implements Serializable {
   public Basket(Client client, Company company){
     this._client = client;
     this._company = company;
-    this._baskets = new TreeMap<>();
   }
 
   public Client getClient(){
