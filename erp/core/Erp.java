@@ -6,6 +6,7 @@ import erp.core.exception.ClientExceptions.UnknownClientException;
 import erp.core.exception.CompanyExceptions.CompanyRegistrationException;
 import erp.core.exception.CompanyExceptions.UnknownCompanyException;
 
+
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.Map;
@@ -216,6 +217,14 @@ class Erp implements Serializable {
     Company company = searchCompany(companyID);
     return company.listProducts();
     
+  }
+
+
+
+  Basket getBasket(String clientId, int companyId) throws UnknownClientException, UnknownCompanyException{
+    Client client = searchClient(clientId);
+    Company company = searchCompany(companyId);
+    return client.getBasket(company);
   }
 
   int getDateAtual() {
