@@ -145,10 +145,9 @@ public class ErpManager {
    *
    * @param filename the name of the file.
    * @throws FileNotFoundException if for some reason the file cannot be created or opened.
-   * @throws MissingFileAssociationException if the current library does not have a file.
    * @throws IOException if there is some error while serializing the state of the network to disk.
    **/
-  public void saveAs(String filename) throws MissingFileAssociationException, IOException {
+  public void saveAs(String filename) throws IOException {
     try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(filename))) {
       out.writeObject(_erp);
     }
