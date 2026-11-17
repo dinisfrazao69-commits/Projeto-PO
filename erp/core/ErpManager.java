@@ -149,7 +149,11 @@ public class ErpManager {
    * @throws IOException if there is some error while serializing the state of the network to disk.
    **/
   public void saveAs(String filename) throws MissingFileAssociationException, IOException {
-    //FIXME implement method
+    try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(filename))) {
+      out.writeObject(_erp);
+    }
+    _filename = filename;
+    _modified = false;
   }
 
   /**
