@@ -20,6 +20,7 @@ public class ErpManager {
   /** The object doing all the actual work. */
   private Erp _erp = new Erp();
   private boolean _modified = false;
+  private String _filename = null;
 
   public List<Client> listClients(){
     return _erp.listClients();
@@ -109,6 +110,10 @@ public class ErpManager {
     _modified = true;
   }
 
+  public boolean isModified() {
+    return _modified;
+  } 
+
 
   // --- persistence -------------------------------------------------------
 
@@ -121,7 +126,17 @@ public class ErpManager {
    * @throws IOException if there is some error while serializing the state of the network to disk.
    **/
   public void save() throws MissingFileAssociationException, IOException {
-    //FIXME implement method
+    if (!_modified) {
+      return;
+    }
+    if (_filename == null) {
+      throw new MissingFileAssociationException();
+    }
+    try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(_filename))) {
+      out.writeObject(_erp);
+    }
+
+    _modified = false;
   }
 
   /**
