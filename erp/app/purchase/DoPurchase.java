@@ -9,7 +9,7 @@ import pt.tecnico.uilib.menus.CommandException;
 import erp.app.exception.UnknownClientKeyException;
 import erp.app.exception.UnknownCompanyKeyException;
 import erp.core.Basket;
-//FIXME maybe import classes
+
 
 /**
  * Starts (or resumes) a purchase: it asks whose basket, at which company, and

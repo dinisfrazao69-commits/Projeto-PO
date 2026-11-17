@@ -5,7 +5,7 @@ import erp.core.exception.CompanyRegistrationException;
 import pt.tecnico.uilib.menus.Command;
 import pt.tecnico.uilib.menus.CommandException;
 import erp.app.exception.CompanyRegistrationFailedException;
-//FIXME maybe import classes
+
 
 /**
  * Register a new company.

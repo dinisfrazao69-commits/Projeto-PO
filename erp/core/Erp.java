@@ -9,7 +9,7 @@ import java.util.TreeMap;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-// FIXME maybe import classes
+
 
 /**
  * The whole ERP system: holds all the state and the domain logic.
@@ -19,12 +19,7 @@ class Erp implements Serializable {
   @java.io.Serial
   private static final long serialVersionUID = 202608261200L;
 
-  //FIXME maybe define attributes
-  //FIXME maybe implement constructor
 
-
-
-  //FIXME maybe implement methods
   private int _companiesId = 1;
   private int _productsId = 1;
   private int _dateAtual = 1;
@@ -241,8 +236,7 @@ class Erp implements Serializable {
    * @throws UnrecognizedEntryException if some entry is not correct
    * @throws IOException if there is an IO erro while processing the text file
    **/
-  void importFile(String filename) throws UnrecognizedEntryException, IOException
-                       /* FIXME maybe other exceptions */ {
+  void importFile(String filename) throws UnrecognizedEntryException, IOException{
     new Parser(this).parseFile(filename);
     
   }

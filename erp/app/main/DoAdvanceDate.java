@@ -3,7 +3,7 @@ package erp.app.main;
 import erp.core.ErpManager;
 import pt.tecnico.uilib.menus.Command;
 import pt.tecnico.uilib.menus.CommandException;
-//FIXME maybe import classes
+
 
 /**
  * Advance the current date.

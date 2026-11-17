@@ -7,7 +7,7 @@ import erp.core.exception.UnknownCompanyException;
 import erp.core.exception.UnknownProductException;
 import pt.tecnico.uilib.menus.Command;
 import pt.tecnico.uilib.menus.CommandException;
-//FIXME maybe import classes
+
 
 /**
  * Changes what a company holds of a product — the amount is added to its
