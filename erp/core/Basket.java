@@ -1,8 +1,8 @@
 package erp.core;
 
 import java.io.Serializable;
-//FIXME maybe import classes
-
+import java.util.Map;
+import java.util.TreeMap;
 /**
  * A client's shopping basket at one company: what it intends to buy, and how it
  * wants the purchase shipped.
@@ -16,7 +16,23 @@ public class Basket implements Serializable {
   @java.io.Serial
   private static final long serialVersionUID = 202608261200L;
 
-  //FIXME maybe define attributes
-  //FIXME maybe implement constructor
-  //FIXME maybe implement methods
+  private Client _client;
+  private Company _company;
+  private Map<Integer, Basket> _baskets;
+
+  public Basket(Client client, Company company){
+    this._client = client;
+    this._company = company;
+    this._baskets = new TreeMap<>();
+  }
+
+  public Client getClient(){
+    return this._client;
+  }
+
+  public Company getCompany(){
+    return this._company;
+  }
+
+  
 }
