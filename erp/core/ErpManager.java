@@ -114,6 +114,10 @@ public class ErpManager {
     return _modified;
   } 
 
+  public Basket getBasket(String clientId, int companyId) throws UnknownClientException, UnknownCompanyException{
+    return _erp.getBasket(clientId, companyId);
+  }
+
 
   // --- persistence -------------------------------------------------------
 

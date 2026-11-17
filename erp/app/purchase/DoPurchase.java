@@ -1,8 +1,14 @@
 package erp.app.purchase;
 
 import erp.core.ErpManager;
+import erp.core.exception.ClientExceptions.UnknownClientException;
+import erp.core.exception.CompanyExceptions.UnknownCompanyException;
 import pt.tecnico.uilib.menus.Command;
 import pt.tecnico.uilib.menus.CommandException;
+
+import erp.app.exception.UnknownClientKeyException;
+import erp.app.exception.UnknownCompanyKeyException;
+import erp.core.Basket;
 //FIXME maybe import classes
 
 /**
@@ -18,11 +24,24 @@ class DoPurchase extends Command<ErpManager> {
 
   DoPurchase(ErpManager receiver) {
     super(Label.DO_PURCHASE, receiver);
-    //FIXME maybe define fields
+    addStringField("clientId", erp.app.client.Prompt.clientId());
+    addIntegerField("companyId", erp.app.company.Prompt.companyId());
   }
 
   @Override
   protected final void execute() throws CommandException {
-    //FIXME implement command
+    String clientId = stringField("clientId");
+    int companyId = integerField("companyId");
+    try{
+    Basket basket = _receiver.getBasket(clientId, companyId);
+    new erp.app.basket.Menu(_receiver, basket).open();
+    }
+    catch(UnknownClientException e){
+      throw new UnknownClientKeyException(clientId);
+    }
+    catch(UnknownCompanyException j){
+      throw new UnknownCompanyKeyException(companyId);
+    }
+
   }
 }
