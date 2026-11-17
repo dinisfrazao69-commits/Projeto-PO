@@ -1,4 +1,4 @@
-package erp.core.exception.CompanyExceptions;
+package erp.core.exception;
 
 
 public class CompanyRegistrationException extends Exception{

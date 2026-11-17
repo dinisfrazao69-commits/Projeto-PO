@@ -1,11 +1,6 @@
 package erp.core;
 
 import erp.core.exception.*;
-import erp.core.exception.ClientExceptions.ClientRegistrationException;
-import erp.core.exception.ClientExceptions.UnknownClientException;
-import erp.core.exception.CompanyExceptions.CompanyRegistrationException;
-import erp.core.exception.CompanyExceptions.UnknownCompanyException;
-
 
 import java.io.IOException;
 import java.io.Serializable;

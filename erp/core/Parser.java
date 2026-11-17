@@ -11,11 +11,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import erp.core.exception.UnrecognizedEntryException;
+import erp.core.exception.ClientRegistrationException;
+import erp.core.exception.CompanyRegistrationException;
 import erp.core.exception.ProductRegistrationException;
+import erp.core.exception.UnknownCompanyException;
 import erp.core.exception.UnknownProductException;
-import erp.core.exception.ClientExceptions.ClientRegistrationException;
-import erp.core.exception.CompanyExceptions.CompanyRegistrationException;
-import erp.core.exception.CompanyExceptions.UnknownCompanyException;
 
 class Parser {
   private Erp _erp;

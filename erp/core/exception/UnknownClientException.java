@@ -1,4 +1,4 @@
-package erp.core.exception.ClientExceptions;
+package erp.core.exception;
 
 public class UnknownClientException  extends Exception{
     

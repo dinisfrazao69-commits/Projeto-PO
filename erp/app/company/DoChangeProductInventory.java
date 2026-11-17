@@ -3,8 +3,8 @@ package erp.app.company;
 import erp.app.exception.UnknownCompanyKeyException;
 import erp.app.exception.UnknownProductKeyException;
 import erp.core.ErpManager;
+import erp.core.exception.UnknownCompanyException;
 import erp.core.exception.UnknownProductException;
-import erp.core.exception.CompanyExceptions.UnknownCompanyException;
 import pt.tecnico.uilib.menus.Command;
 import pt.tecnico.uilib.menus.CommandException;
 //FIXME maybe import classes

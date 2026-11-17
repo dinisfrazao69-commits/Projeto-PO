@@ -1,7 +1,7 @@
 package erp.app.company;
 
 import erp.core.ErpManager;
-import erp.core.exception.CompanyExceptions.CompanyRegistrationException;
+import erp.core.exception.CompanyRegistrationException;
 import pt.tecnico.uilib.menus.Command;
 import pt.tecnico.uilib.menus.CommandException;
 import erp.app.exception.CompanyRegistrationFailedException;

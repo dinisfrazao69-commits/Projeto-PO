@@ -1,8 +1,8 @@
 package erp.app.purchase;
 
 import erp.core.ErpManager;
-import erp.core.exception.ClientExceptions.UnknownClientException;
-import erp.core.exception.CompanyExceptions.UnknownCompanyException;
+import erp.core.exception.UnknownClientException;
+import erp.core.exception.UnknownCompanyException;
 import pt.tecnico.uilib.menus.Command;
 import pt.tecnico.uilib.menus.CommandException;
 
@@ -33,8 +33,8 @@ class DoPurchase extends Command<ErpManager> {
     String clientId = stringField("clientId");
     int companyId = integerField("companyId");
     try{
-    Basket basket = _receiver.getBasket(clientId, companyId);
-    new erp.app.basket.Menu(_receiver, basket).open();
+      Basket basket = _receiver.getBasket(clientId, companyId);
+      new erp.app.basket.Menu(_receiver, basket).open();
     }
     catch(UnknownClientException e){
       throw new UnknownClientKeyException(clientId);

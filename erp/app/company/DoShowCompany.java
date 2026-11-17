@@ -4,6 +4,7 @@ import erp.app.exception.UnknownCompanyKeyException;
 import erp.core.ErpManager;
 import pt.tecnico.uilib.menus.Command;
 import pt.tecnico.uilib.menus.CommandException;
+import erp.core.exception.UnknownCompanyException;
 import erp.core.exception.CompanyExceptions.*;
 //FIXME maybe import classes
 

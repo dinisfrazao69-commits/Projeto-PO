@@ -11,7 +11,7 @@ public class ProductRegistrationException  extends Exception{
         this._name = name;
     }
 
-    public String getId(){
+    public String getName(){
         return this._name;
     }
 }

@@ -1,7 +1,7 @@
 package erp.app.client;
 
 import erp.core.ErpManager;
-import erp.core.exception.ClientExceptions.UnknownClientException;
+import erp.core.exception.UnknownClientException;
 import pt.tecnico.uilib.menus.Command;
 import pt.tecnico.uilib.menus.CommandException;
 import erp.app.exception.UnknownClientKeyException;
