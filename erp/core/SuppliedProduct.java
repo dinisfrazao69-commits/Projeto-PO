@@ -49,7 +49,7 @@ public class SuppliedProduct implements Serializable{
 
     boolean update(int unity, double factor){
         int quantidade = this._quantity + unity;
-        if (quantidade < 0 || factor <= 0){
+        if (quantidade < 0 || !(factor > 0)){
             return false;
         }
         this._quantity = quantidade;

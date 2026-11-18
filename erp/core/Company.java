@@ -36,14 +36,16 @@ public class Company implements Serializable{
         return this._produtos.get(id);
     }
 
-    public void addProduct(SuppliedProduct produto){
+    void addProduct(SuppliedProduct produto){
         this._produtos.put(produto.getProduct().getId(), produto);
     }
 
     public List<SuppliedProduct> listProducts(){
         List<SuppliedProduct> lista = new ArrayList<>();
         for (SuppliedProduct p: this._produtos.values()){
-            lista.add(p);
+            if (p.getQuantity() > 0) {
+                lista.add(p);
+            }
         }
         return lista;
     }

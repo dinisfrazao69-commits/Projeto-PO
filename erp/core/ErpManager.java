@@ -102,6 +102,9 @@ public class ErpManager {
   }
 
   public void advanceDate(int days) {
+    if (days <= 0) {
+      return;
+    }
     _erp.advanceDate(days);
     _modified = true;
   }

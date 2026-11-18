@@ -34,12 +34,9 @@ class Erp implements Serializable {
 
     clients.sort(Comparator.comparing(Client::getName, 
       String.CASE_INSENSITIVE_ORDER).thenComparing(Client::getEmail, String.CASE_INSENSITIVE_ORDER));
-    //o string.case_insensitive é para comparar os textos sem distinguir maisuculas d eminusculas
-    //ou seja, primeiro compara os nomes e depois compara os emails
     return clients;
   }
 
-  //o modified vai ficar no erpManager e não aqui
   
   void registerClient(String name, String email) throws ClientRegistrationException {
     if (name.isBlank() || email.isBlank() || _clients.containsKey(email)) {
@@ -193,7 +190,7 @@ class Erp implements Serializable {
     if (stock != null){
       return stock.update(quantity,factor);//O update atualiza os dados daquele produto naquela empresa
     }
-    if (quantity <=0 || factor <= 0){
+    if (quantity <=0 || !(factor > 0)){
       return false;
     }
     SuppliedProduct novo = new SuppliedProduct(c, p, quantity, factor);
